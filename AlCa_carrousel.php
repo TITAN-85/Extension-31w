@@ -22,19 +22,19 @@ function acc_enqueue () {
     $version_css = filemtime(plugin_dir_path(__FILE__) . "style.css");
     $version_js = filemtime(plugin_dir_path(__FILE__) . "js.carrousel.js");
 
-    wp_enqueue_style("acc_style_carrousel, acc", 
+    wp_enqueue_style("acc_style_carrousel", 
 
                                 plugin_dir_url(__FILE__) . "style.css",
                                 array(),
                                 $version_css,
                                 false);    
 
-    wp_enqueue_script("acc_js_carrousel, acc", 
+    wp_enqueue_script("acc_js_carrousel", 
 
                                 plugin_dir_url(__FILE__) . "js/carrousel.js",
                                 array(),
                                 $version_js,
-                                false);              
+                                true);              
 };
 
 add_action("wp_enqueue_scripts", 'acc_enqueue');
@@ -42,7 +42,8 @@ add_action("wp_enqueue_scripts", 'acc_enqueue');
 
 function genere_boite() {
     $contenu = "
-    <div class='carrousel'> Carrousel </div>";
+    <button class='btn_modale' > boiter modal </button>
+    <div class='carrousel'> Carrousel de Alex </div>";
     return $contenu;
 }
 
