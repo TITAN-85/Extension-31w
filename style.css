@@ -6,9 +6,22 @@
   height: 50vh;
   background-color: rgb(25, 92, 168);
   transform: scale(0);
-  transform: translate 1s;
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
 }
 
 .carrousel--ouvrir {
   transform: scale(1);
+  opacity: 1;
+}
+
+.btn_fermer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
 }/*# sourceMappingURL=style.css.map */

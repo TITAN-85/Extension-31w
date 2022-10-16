@@ -43,7 +43,8 @@ add_action("wp_enqueue_scripts", 'acc_enqueue');
 function genere_boite() {
     $contenu = "
     <button class='btn_modale' > boiter modal </button>
-    <div class='carrousel'> Carrousel de Alex </div>";
+    <div class='carrousel'> Carrousel de Alex <button class='btn_fermer' > X </button>
+    </div>";
     return $contenu;
 }
 
