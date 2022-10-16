@@ -5,4 +5,10 @@
   width: 50vw;
   height: 50vh;
   background-color: rgb(25, 92, 168);
+  transform: scale(0);
+  transform: translate 1s;
+}
+
+.carrousel--ouvrir {
+  transform: scale(1);
 }/*# sourceMappingURL=style.css.map */

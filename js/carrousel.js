@@ -1,8 +1,11 @@
 (function(){
     console.log('Carrousel');
     let $ellBtnModale = document.querySelector('.btn_modale')
+    let ellCarrousel = document.querySelector('.carrousel')
+
     $ellBtnModale.addEventListener('mousedown', function(){
         console.log('mouse down event');
+        ellCarrousel.classList.add('carrousel--ouvrir');
     })
 })();
 
