@@ -58,6 +58,7 @@
             console.log(this.dataset.index);
             
             elCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer');
+            index = derniereIndex;
         });
     }
 
