@@ -1,0 +1,41 @@
+[33mcommit 135d90fe02039d88c9ddbb419f67f8e2968bc608[m[33m ([m[1;36mHEAD -> [m[1;32mtp1[m[33m)[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Oct 18 16:01:40 2022 -0400
+
+    c-10 ajout des photos dans carrousel et creation de fonction dans javascript
+
+[33mcommit 22ef0dbc3067159b1bf61770b479037ef3333203[m[33m ([m[1;31m31w/tp1[m[33m)[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Sun Oct 16 14:53:33 2022 -0400
+
+    c9 Organisation dosier et wp_enqueue de css script
+
+[33mcommit 483451e747130a4a787fd006e2993cd50b1c0dee[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Sun Oct 16 14:37:39 2022 -0400
+
+    carrousel ouvrir fonction bien
+
+[33mcommit 3de68a7d5d6a3d4cacbd130d3da5f52ab2b2511e[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Sun Oct 16 14:28:58 2022 -0400
+
+    creation de carrousel, dimencions, correction des erreures dans fonctions
+
+[33mcommit 41c9d0a9d8e635da4c5d4e307df858fec46b38d8[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Sun Oct 16 13:22:28 2022 -0400
+
+    ajoute de fonction de carrousel
+
+[33mcommit 872409aa89e728de86cfc1005f5c937c3c516bc5[m[33m ([m[1;31m31w/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Sun Oct 16 12:29:04 2022 -0400
+
+    c9 ajout de css dans <style>
+
+[33mcommit 4a9dbe6d5da1ce4d90856abb575bef1e13133b06[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Sun Oct 16 12:03:50 2022 -0400
+
+    debut du carrousel

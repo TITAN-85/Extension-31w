@@ -18,6 +18,7 @@ wp_enqueue_scripts // le hook
 */
 
 
+
 function acc_enqueue () {
     $version_css = filemtime(plugin_dir_path(__FILE__) . "style.css");
     $version_js = filemtime(plugin_dir_path(__FILE__) . "js/carrousel.js");
@@ -47,10 +48,7 @@ function genere_boite() {
     <div class='carrousel'> Carrousel de Alex 
         <button class='btn_fermer' > X </button>
         <figure class='carrousel__figure'></figure>
-        <form class'carrousel__form'>
-
-        </form>
-        
+        <form class='carrousel__form'></form>
     </div>";
     return $contenu;
 }
