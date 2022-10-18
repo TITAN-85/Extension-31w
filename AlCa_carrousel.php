@@ -20,7 +20,7 @@ wp_enqueue_scripts // le hook
 
 function acc_enqueue () {
     $version_css = filemtime(plugin_dir_path(__FILE__) . "style.css");
-    $version_js = filemtime(plugin_dir_path(__FILE__) . "js.carrousel.js");
+    $version_js = filemtime(plugin_dir_path(__FILE__) . "js/carrousel.js");
 
     wp_enqueue_style("acc_style_carrousel", 
 
@@ -43,7 +43,14 @@ add_action("wp_enqueue_scripts", 'acc_enqueue');
 function genere_boite() {
     $contenu = "
     <button class='btn_modale' > boiter modal </button>
-    <div class='carrousel'> Carrousel de Alex <button class='btn_fermer' > X </button>
+
+    <div class='carrousel'> Carrousel de Alex 
+        <button class='btn_fermer' > X </button>
+        <figure class='carrousel__figure'></figure>
+        <form class'carrousel__form'>
+
+        </form>
+        
     </div>";
     return $contenu;
 }
