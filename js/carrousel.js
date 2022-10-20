@@ -34,11 +34,16 @@
         // elImg.dataset.index = index;
         ajouter_img_carrousel(elImg);
         ajouter_radio_carrousel();
+        /* Ecouter sur les images de la carrousel */
         elImg.addEventListener('mousedown', function(){
             console.log('galerie');
             console.log('elImg.dataset.index'+" "+this.dataset.index);
             elCarrousel.classList.add('carrousel--ouvrir');
             elCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer');
+
+
+            elCarrousel__form.children[this.dataset.index].checked = true;
+
             derniereIndex = this.dataset.index;
 
         })
@@ -66,6 +71,7 @@
         elCarrousel__form__radio.dataset.index = index;
         index++
         elCarrousel__form.appendChild(elCarrousel__form__radio);
+        
         /* ecouteur sur radio afficher une nouvelle image */
         elCarrousel__form__radio.addEventListener('mousedown', function(e){
             

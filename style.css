@@ -25,6 +25,7 @@
   top: 0;
   width: 2rem;
   height: 2rem;
+  z-index: 3;
 }
 
 .carrousel__figure {
@@ -41,6 +42,7 @@
   width: 100%;
   opacity: 0;
   transition: opacity 1s;
+  height: 100%;
 }
 
 .carrousel__figure__img--activer {
@@ -60,4 +62,5 @@
 .carrousel img {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
