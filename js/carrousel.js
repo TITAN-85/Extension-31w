@@ -19,25 +19,38 @@
 
     /* Les elements de la galerie */
     /* Containeur principale de la galerie */
+    
     let elGalerie = document.querySelector('.galerie')
-    // console.log(elGalerie);
+    console.log(elGalerie);
     let elGalerieImg = document.querySelectorAll('.galerie figure img')
     console.log(elGalerieImg);
 
+
     /* Etape 1 parcourir les images de la galerie */
-    
-    console.log('ok');
     for (const elImg of elGalerieImg) {
         console.log('for');
         console.log(elImg.getAttribute("src"));
-    
+        
+        // elImg.dataset.index = index;
         ajouter_img_carrousel(elImg);
         ajouter_radio_carrousel();
+        elImg.addEventListener('mousedown', function(){
+            console.log('galerie');
+            console.log('elImg.dataset.index'+" "+this.dataset.index);
+            elCarrousel.classList.add('carrousel--ouvrir');
+            elCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer');
+            derniereIndex = this.dataset.index;
+
+        })
     }
       
-      
+    /**
+     * Ajouter une image dans la carrousel
+     * @param {*} elImg 
+     */
     function ajouter_img_carrousel(elImg) {
         // elImg represente une image de la galerie.
+        elImg.dataset.index = index;
         let elCarrousel__figure__img = document.createElement('img');
         elCarrousel__figure__img.setAttribute('src', elImg.getAttribute('src'));
         elCarrousel__figure__img.classList.add('carrousel__figure__img');
@@ -53,12 +66,17 @@
         elCarrousel__form__radio.dataset.index = index;
         index++
         elCarrousel__form.appendChild(elCarrousel__form__radio);
-        /* ecouteur su sur radio afficher une nouvelle image */
-        elCarrousel__form__radio.addEventListener('mousedown', function(){
-            console.log(this.dataset.index);
+        /* ecouteur sur radio afficher une nouvelle image */
+        elCarrousel__form__radio.addEventListener('mousedown', function(e){
             
+            
+            if (derniereIndex != -1) {
+                elCarrousel__figure.children[derniereIndex].classList.remove('carrousel__figure__img--activer');
+            }
+
             elCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer');
-            index = derniereIndex;
+            derniereIndex = this.dataset.index;
+            
         });
     }
 
