@@ -47,6 +47,8 @@ function genere_boite() {
 
     <div class='carrousel'> Carrousel de Alex 
         <button class='btn_fermer' > X </button>
+        <button class='btn_droite' > >>> </button>
+        <button class='btn_gauche' > <<< </button>
         <figure class='carrousel__figure'></figure>
         <form class='carrousel__form'></form>
     </div>";

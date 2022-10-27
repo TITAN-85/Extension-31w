@@ -11,6 +11,10 @@
     let elBtnModale = document.querySelector('.btn_modale')
     /* Btn temporaire pour fermer le carrousel X */
     let elBtnModalFermer = document.querySelector('.btn_fermer')
+    /* Btn temporaire pour droite le carrousel >>> */
+    let elBtnModaldroite = document.querySelector('.btn_droite')
+    /* Btn temporaire pour gauche le carrousel <<< */
+    let elBtnModalgauche = document.querySelector('.btn_gauche')
     /* Figure qui contiendra l'ensamble des images du carrousel */
     let elCarrousel__figure = document.querySelector('.carrousel__figure')
     /* le formulaire qui contiendra l'ensamble des bouttons radio */
@@ -21,9 +25,9 @@
     /* Containeur principale de la galerie */
     
     let elGalerie = document.querySelector('.galerie')
-    console.log(elGalerie);
+    // console.log(elGalerie);
     let elGalerieImg = document.querySelectorAll('.galerie figure img')
-    console.log(elGalerieImg);
+    // console.log(elGalerieImg);
 
 
     /* Etape 1 parcourir les images de la galerie */
