@@ -16,7 +16,7 @@
     opacity: 1;
 }
   
-.btn_fermer {
+.btn_fermer, .btn_droite, .btn_gauche {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,6 +26,28 @@
     width: 2rem;
     height: 2rem;
     z-index: 3;
+}
+.btn_droite {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    z-index: 4;
+}
+.btn_gauche {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    z-index: 4;
 }
   
 .carrousel__figure {
