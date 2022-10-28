@@ -26,30 +26,54 @@
   width: 2rem;
   height: 2rem;
   z-index: 3;
+  cursor: pointer;
 }
 
-.btn_droite {
-  display: flex;
-  align-items: center;
-  justify-content: start;
+.btn_droite, .btn_gauche {
   position: absolute;
+  padding-top: 55px;
+  padding-bottom: 55px;
   right: 0;
-  top: 0;
-  width: 2rem;
-  height: 2rem;
+  top: 50%;
+  width: 50px;
   z-index: 4;
+  font-weight: bold;
+  color: rgb(151, 224, 253);
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.6s ease;
+  margin: 10px;
+  background-color: rgba(171, 176, 180, 0.247);
+  border: none;
 }
 
 .btn_gauche {
-  display: flex;
-  align-items: center;
-  justify-content: end;
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 2rem;
-  height: 2rem;
+  left: 0;
   z-index: 4;
+}
+
+.btn_droite:hover, .btn_gauche:hover {
+  background-color: rgb(66, 93, 117);
+  border: none;
+  color: aliceblue;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.active .carrousel__form__radio:hover {
+  background-color: aqua;
+}
+
+.carrousel__form__radio {
+  cursor: pointer;
+  height: 20px;
+  width: 15px;
+  background-color: chocolate;
+  margin: 0 4px;
+  border-radius: 50%;
+  display: block;
+  transition: background-color 0.3s ease;
 }
 
 .carrousel__figure {
