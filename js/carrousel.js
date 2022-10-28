@@ -129,6 +129,7 @@
                 }
             }
         }
+        derniereIndex = elRadio.dataset.index+1;
     })
 
 
@@ -136,6 +137,7 @@
 
 
     elBtnModalgauche.addEventListener('mousedown', function(){
+        
         console.log('click gauche');
         let elRadio = document.querySelectorAll('.carrousel__form__radio');
         let elRadioActuel;
@@ -166,6 +168,7 @@
             }
             
         }
+        derniereIndex = elRadio.dataset.index+1;
     })
 
 })();
