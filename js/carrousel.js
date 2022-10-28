@@ -20,21 +20,15 @@
     /* le formulaire qui contiendra l'ensamble des bouttons radio */
     elCarrousel__form = document.querySelector('.carrousel__form'),
 
-
     /* Les elements de la galerie */
     /* Containeur principale de la galerie */
-    
-    elGalerie = document.querySelector('.galerie'),
-    // console.log(elGalerie);
+    // elGalerie = document.querySelector('.galerie'),
     elGalerieImg = document.querySelectorAll('.galerie figure img');
-    // console.log(elGalerieImg);
 
 
     /* Etape 1 parcourir les images de la galerie */
     for (const elImg of elGalerieImg) {
-        console.log('for');
-        console.log(elImg.getAttribute("src"));
-        
+
         // elImg.dataset.index = index;
         ajouter_img_carrousel(elImg);
         ajouter_radio_carrousel();
@@ -67,6 +61,10 @@
         elCarrousel__figure.appendChild(elCarrousel__figure__img);
     }
 
+    /**
+     * Ajouter une radio dans la carrousel
+     * @param {*} elImg 
+     */
     function ajouter_radio_carrousel() {
         let elCarrousel__form__radio = document.createElement('input');
         elCarrousel__form__radio.setAttribute('name', 'carrousel__form__radio');
@@ -79,11 +77,9 @@
         /* ecouteur sur radio afficher une nouvelle image */
         elCarrousel__form__radio.addEventListener('mousedown', function(e){
             
-            
             if (derniereIndex != -1) {
                 elCarrousel__figure.children[derniereIndex].classList.remove('carrousel__figure__img--activer');
             }
-
             elCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer');
             derniereIndex = this.dataset.index;
             
@@ -97,6 +93,34 @@
     /*  */
     elBtnModalFermer.addEventListener('mousedown', function(){
         elCarrousel.classList.remove('carrousel--ouvrir');
+    })
+
+
+
+    elBtnModaldroite.addEventListener('mousedown', function(){
+        console.log('click droite');
+
+        for (let i = 0; i < elCarrousel__figure.children.length; i++) {
+            if (elCarrousel__figure.children[i].classList.contains('carrousel__figure__img--activer')) {
+                elCarrousel__figure.children[i].classList.remove('carrousel__figure__img--activer');
+                if (i == 3) {
+                    elCarrousel__figure.children[0].classList.add('carrousel__figure__img--activer');
+                } else {
+                    elCarrousel__figure.children[i+1].classList.add('carrousel__figure__img--activer');
+                    break;
+                }
+
+            }
+            
+        }
+
+    })
+
+
+
+
+    elBtnModalgauche.addEventListener('mousedown', function(){
+        console.log('click gauche');
     })
 
 })();
