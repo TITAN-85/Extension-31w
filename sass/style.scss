@@ -4,10 +4,12 @@
     top: 12.5vh;
     width: 75vw;
     height: 75vh;
-    background-color: aqua;
+    background-color: inherit;
     transform: scale(0);
     opacity: 0;
     transition: transform 1s, opacity 1s;
+    border: solid 3px rgb(12, 51, 124);
+    border-radius: 13px;
     z-index: 1;
 }
   
@@ -42,7 +44,6 @@
     font-size: 20px;
     transition: 0.6s ease;
     margin: 10px;
-    // border-radius: 0 3px 3px 0;
     background-color: rgba(171, 176, 180, 0.247);
     border: none;
 
@@ -50,9 +51,7 @@
 .btn_gauche {
     position: absolute;
     left: 0;
-    // top: 50%;
     z-index: 4;
-    // border-radius: 3px 0 0 3px;
 }
 
 .btn_droite:hover, .btn_gauche:hover {
@@ -80,11 +79,9 @@
 }
   
 .carrousel__figure {
-    // position: relative;
     width: 100%;
     height: 100%;
 }
-// TODO:
   
 .carrousel__figure__img {
     display: block;
@@ -95,7 +92,6 @@
     width: 100%;
     opacity: 0;
     transition: opacity 1s;
-    //z-index: 2;
     height: 100%;
 }
 .carrousel__figure__img--activer {
@@ -116,13 +112,7 @@
 
 .carrousel img {
 
-    // object-fit: cover;
-    // object-position: center;
-    // height: 100vh;
     height: 100%;
     width: 100%;
-    // overflow: hidden;
     border-radius: 10px;
-
-
 }
