@@ -121,6 +121,20 @@
 
     elBtnModalgauche.addEventListener('mousedown', function(){
         console.log('click gauche');
+
+        for (let i = 0; i < elCarrousel__figure.children.length; i++) {
+            if (elCarrousel__figure.children[i].classList.contains('carrousel__figure__img--activer')) {
+                elCarrousel__figure.children[i].classList.remove('carrousel__figure__img--activer');
+                if (i == 0) {
+                    elCarrousel__figure.children[3].classList.add('carrousel__figure__img--activer');
+                } else {
+                    elCarrousel__figure.children[i-1].classList.add('carrousel__figure__img--activer');
+                    break;
+                }
+
+            }
+            
+        }
     })
 
 })();
