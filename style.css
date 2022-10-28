@@ -19,6 +19,18 @@
 }
 
 .btn_fermer, .btn_droite, .btn_gauche {
+  cursor: pointer;
+  color: rgb(151, 224, 253);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  margin: 10px;
+  background-color: rgba(171, 176, 180, 0.547);
+  border: none;
+  border-radius: 10px;
+}
+
+.btn_fermer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +40,6 @@
   width: 2rem;
   height: 2rem;
   z-index: 3;
-  cursor: pointer;
 }
 
 .btn_droite, .btn_gauche {
@@ -39,14 +50,6 @@
   top: 50%;
   width: 50px;
   z-index: 4;
-  font-weight: bold;
-  color: rgb(151, 224, 253);
-  cursor: pointer;
-  font-size: 20px;
-  transition: 0.6s ease;
-  margin: 10px;
-  background-color: rgba(171, 176, 180, 0.247);
-  border: none;
 }
 
 .btn_gauche {
@@ -55,7 +58,7 @@
   z-index: 4;
 }
 
-.btn_droite:hover, .btn_gauche:hover {
+.btn_droite:hover, .btn_gauche:hover, .btn_fermer:hover {
   background-color: rgb(66, 93, 117);
   border: none;
   color: aliceblue;
